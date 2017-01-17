@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+
+  "name": "Advanced Back Button",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+   "author": "Andrew Henry, Nick Smider",
+
+   "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "icons": {
+          "16": "favicon.png"
+        },
+  
+ "homepage_url": "https://github.com/AJHenry/ABB",
+ 
+ "commands": {
+   "toggle-feature-bind": {
+    "suggested_key": {
+      "default": "Ctrl+Left",
+      "windows": "Ctrl+Left",
+      "mac": "Command+Left",
+      "chromeos": "Ctrl+Left",
+      "linux": "Ctrl+Left"
+    },
+	"description": "Shortcut for ABB"
+  }
+},
+ 
+  "permissions": [
+   "contextMenus", 
+    "tabs",
+    "activeTab",
+	"history",
+	"sessions",
+	"tabCapture"
+  ]
+}
